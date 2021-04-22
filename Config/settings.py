@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = str(os.environ.get('BLOG_SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(int(os.getenv("BLOG_DEBUG", default=1)))
+DEBUG = bool(int(os.getenv("BLOG_DEBUG", default=0)))
 
 # ALLOWED_HOSTS = ['localhost', ]
-ALLOWED_HOSTS = str(os.environ.get("BLOG_ALLOWED_HOSTS")).split(' ')
+ALLOWED_HOSTS = str(os.environ.get("BLOG_ALLOWED_HOSTS")).split(',')
 
 # Application definition
 
