@@ -1,0 +1,13 @@
+body {
+  background: #fffafa;
+}
+
+header {
+  background: #f1c067;
+  margin-bottom: 15px;
+}
+
+#logo {
+	color: #000000;
+	font-size: 4rem;
+}

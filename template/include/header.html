@@ -1,8 +1,17 @@
-{% block header %}
 <header class="container">
     <div class="row">
         <div class="col">
-            <h1>BLOG</h1>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" id="logo" href="{% url 'home' %}">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О бомне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>  
         </div>
         <div class="col">
             <ul class="nav justify-content-end">
@@ -19,4 +28,3 @@
         </div>
     </div>
 </header>
-{% endblock header %}
